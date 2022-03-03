@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<meta charset="UTF-8">
+
+<style>
+body, html {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+   background-image:  url("6418094.jpg");
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  
+}
+
+.taskbar {
+  position: fixed;
+  width: 100%;
+  bottom: 0px;
+  height: 40px;
+  background: linear-gradient(to right, #0000ff 0%, #000000 100%)
+}
+
+.menustart {
+	  width: 200px;
+  height: 300px;
+  background: linear-gradient(to top, #0000ff 0%, #000000 100%);
+  border: 1px solid black;
+  left: 3px;
+   position: fixed;
+   bottom: 43px;
+   display: none;
+  border-color: gray;
+}
+
+.menustartbtn {
+	width: 182px;height: 50px;background-color:gray;border: none;
+}
+
+.menustartbtn:hover {
+	background-color: #0000ff;
+}
+</style>
+</head>
+<body onload="startupprograms()">
+
+<div id="desktop">
+
+<div id="StartMenu" class="menustart w3-animate-bottom">
+<p class="w3-animate-bottom" style="color: white;transform: rotate(-90deg); left: -110px;position: fixed;bottom: 145px;">Windows Longhorn Vietnam Editions</p>
+<div style="color: black;width: 182px;height: 299px;background-color:gray;position: fixed;left: 20px;">
+<button class="menustartbtn">Chương trình</button>
+<button class="menustartbtn">Văn bản</button>
+<button class="menustartbtn">Điều chỉnh</button>
+<button class="menustartbtn">Ứng dụng</button>
+<button class="menustartbtn">Trò chơi</button>
+<button class="menustartbtn">Tắt máy</button>
+</div>
+</div>
+
+<div  class="taskbar w3-animate-left" >
+<button onclick="startmenu()" class="w3-button w3-blue" style="border-radius: 0px 15px 15px 0px;">Begin</button>
+</div>
+
+</div>
+
+<audio autoplay id="startupsound">
+<source src="Startupsound.wav" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+
+ 
+
+
+<script src="filejs2.js"></script>
+</body>
+</html>
